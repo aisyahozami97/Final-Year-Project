@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".JoinEvent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/join_event_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="JOIN EVENT">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d0d0d2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="353dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FCFAFA"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Name :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsName"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Name..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Description :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsDesc"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Description..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Location :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsLocation"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Location..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Date :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsDate"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Date..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Time :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/spinnerNewsTime"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Time..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Volunteer No :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/numVolunteer"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Volunteer Number..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d0d0d2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="User Details"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="First Name :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/vfirstname"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="First Name..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Last Name :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/vlastname"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Last Name..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Phone number :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/vphone"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Phone number..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/btnRegVolunteer"
+                android:background="@color/colorStart"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:text="Register as Volunteer"
+                android:textColor="#ffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Event Id :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/newsId"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+
+                    android:hint="Enter Event Name..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

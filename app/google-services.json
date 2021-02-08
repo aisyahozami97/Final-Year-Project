@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "221867511387",
+    "firebase_url": "https://preloveditemandevent.firebaseio.com",
+    "project_id": "preloveditemandevent",
+    "storage_bucket": "preloveditemandevent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221867511387:android:5be53ded9363ac623ab97e",
+        "android_client_info": {
+          "package_name": "com.example.preloveditemandevent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221867511387-jl9iba2i74lnavk1mscnhocrsoiikult.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.preloveditemandevent",
+            "certificate_hash": "70c132d08ea0324e5eb8c660764e89d2ee0c4864"
+          }
+        },
+        {
+          "client_id": "221867511387-fhhtg8o6h21h384p95pupusfp6v34f9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOeKOKZaUKDnxOUnJ_w7hORaO4PL6olls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221867511387-fhhtg8o6h21h384p95pupusfp6v34f9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#F5A7C0</color>
+    <color name="colorSubmit">#165517</color>
+    <color name="colorStart">#1D8B1D</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimaryDark">#2D2F31</color>
+    <color name="colorPrimary">#490D52</color>
+    <color name="colorwhiteOpacity">#40FFFFFF</color>
+
+</resources>
+

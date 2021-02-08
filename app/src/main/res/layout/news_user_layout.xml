@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/news_user_cv"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:layout_alignParentTop="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/parent_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preloved Event"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="#CC0066"
+                android:textSize="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FCFAFA"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Name :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsName"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Name..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Description   :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsDesc"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Description..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Location :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsLocation"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Location..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Date    :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/newsDate"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Date..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Event Time    :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/spinnerNewsTime"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Event Time..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+
+                        android:layout_width="113dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:text="Volunteer No    :  "
+                        android:textSize="13dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/numVolunteer"
+                        android:layout_width="240dp"
+                        android:layout_height="34dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Volunteer Number..."
+                        android:textSize="13dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="100dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                    android:id="@+id/textViewClickHere"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="175dp"
+                    android:text="Click Here to Join Event"
+                    android:textSize="8dp"
+                    android:layout_marginTop="15dp"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifClickHere"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    tools:ignore="VectorDrawableCompat"
+                    android:src="@drawable/newdoubletap"
+                    />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

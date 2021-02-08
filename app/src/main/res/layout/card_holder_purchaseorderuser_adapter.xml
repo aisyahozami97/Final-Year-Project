@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/cartItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+
+            <ImageView
+                android:id="@+id/cartDeleteItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/bin_delete" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:text="Item Price           :  "
+                android:textSize="11dp" />
+
+            <TextView
+
+                android:id="@+id/cartItemPrice"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="130dp"
+                android:hint="100"
+                android:textSize="11dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:text="Item Availability :  "
+                android:textSize="11dp" />
+
+            <TextView
+
+                android:id="@+id/cartItemAvailability"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="130dp"
+                android:hint="100"
+                android:textSize="11dp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+</androidx.cardview.widget.CardView>

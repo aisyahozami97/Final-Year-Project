@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">preloveditemapp</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="purchased_order">Purchased Order</string>
+    <string name="log_out">Log Out</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+
+    </string-array>
+
+    <string name="select_person">Choose a country</string>
+
+    <string-array name="total_person">
+        <item>1</item>
+        <item>2 </item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string name="select_location">Choose a city</string>
+
+    <string-array name="select_city">
+        <item>Selangor</item>
+        <item>Perak </item>
+        <item>Negeri Sembilan</item>
+        <item>Melaka</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+
+    </string-array>
+
+
+    <string name="select_availability">Choose a Availability</string>
+
+    <string-array name="select_availability">
+        <item>Available</item>
+        <item>Sold Out</item>
+
+    </string-array>
+
+    <string name="select_category">Choose aCategory</string>
+
+    <string-array name="select_category">
+        <item>Cloth</item>
+        <item>Trousers</item>
+        <item>Jacket</item>
+        <item>Jeans</item>>
+
+    </string-array>
+
+    <string name="select_time">Choose a time</string>
+
+    <string-array name="select_time">
+        <item>8.00 AM</item>
+        <item>9.00 AM</item>
+        <item>2.00 PM</item>
+        <item>3.00 PM</item>
+        <item>4.00 PM</item>
+        <item>5.00 PM</item>
+
+    </string-array>
+
+    <string name="select_volunteer">Choose number of Volunteer</string>
+
+    <string-array name="total_volunteer">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="select_itemAvailability">Choose a item availability</string>
+
+    <string-array name="select_itemAvailability">
+        <item>AVAILABLE</item>
+        <item>SOLD OUT</item>
+
+    </string-array>
+
+    <string name="select_itemCategory">Choose a item Category</string>
+
+    <string-array name="select_itemCategory">
+        <item>CLOTHES</item>
+        <item>TROUSERS</item>
+        <item>SHOES</item>
+        <item>BAGS</item>
+
+    </string-array>
+
+
+
+</resources>
+
+
+

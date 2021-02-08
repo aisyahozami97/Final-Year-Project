@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".UpdateItem">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/update_item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="UPDATE ITEM DETAILS">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0d0d2"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FCFAFA"
+                    android:scaleType="centerCrop"
+                    />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Name          :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <EditText
+                    android:id="@+id/txtItemName"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Item Name..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Description:  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <EditText
+                    android:id="@+id/txtItemDesc"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Item Description..."
+                    android:padding="8dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Price            :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <EditText
+                    android:id="@+id/txtItemPrice"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Item Price..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Date             :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/itemDate"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+
+                    android:padding="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="100dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Category     :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/tvItemCategory"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:entries="@array/select_itemCategory"
+                    android:prompt="@string/select_itemCategory"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Item Availability  :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/tvItemAvailability"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="10dp"
+                    android:entries="@array/select_itemAvailability"
+                    android:prompt="@string/select_itemAvailability"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdateItem"
+            android:background="@color/colorStart"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="UPDATE"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

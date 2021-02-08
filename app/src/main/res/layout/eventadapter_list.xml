@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.cardview.widget.CardView
+    app:cardElevation="5dp" android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:text="sample"
+        android:id="@+id/event_name"/>
+
+    <ImageView
+        android:layout_height="180dp"
+        android:layout_width="match_parent"
+        android:background="#FCFAFA"
+        android:id="@+id/image"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:id="@+id/delete"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/bin_delete"
+        android:visibility="visible"
+        android:padding="8dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#000"/>
+
+</androidx.cardview.widget.CardView>

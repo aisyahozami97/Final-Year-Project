@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".PaymentReceipt">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/payment_item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Payment Receipt">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0d0d2"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FCFAFA"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/btn_addimage"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Bank :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Maybank  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="1dp"
+                android:text="Account Name :  "
+                android:textSize="13dp"
+                android:layout_marginTop="7dp"/>
+
+                <TextView
+
+                    android:layout_width="214dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Kedai Jalanan University Malaya  "
+                    android:textSize="13dp" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Account No :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="514243416082"
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnUploadReceipt"
+            android:background="#64922E"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="I have receipt. Upload now."
+
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+          />
+            <Button
+                android:id="@+id/btnLater"
+                android:background="#ffff"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:text="I do not have receipt. Upload later."
+                android:textColor="#64922E"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

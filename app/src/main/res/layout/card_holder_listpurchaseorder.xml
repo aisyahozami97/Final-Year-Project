@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_cv"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:layout_alignParentTop="true" >
+
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CC0066"
+                android:text="List Purchase Order"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FCFAFA"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Tracking No          :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/orderId"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Id..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="User Name          :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="Name..."
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Order Status            :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/orderStatus"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="To Pay/Paid/To Ship"
+                    android:textSize="13dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+
+                    android:layout_width="113dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="Date     :  "
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="240dp"
+                    android:layout_height="34dp"
+                    android:background="#ffffff"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:entries="@array/select_itemCategory"
+                    android:prompt="@string/select_itemCategory"
+                    android:layout_marginLeft="100dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                android:id="@+id/accept"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="120dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/accept3"
+                tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/reject"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="220dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/reject4"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

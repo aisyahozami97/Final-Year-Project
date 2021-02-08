@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.acer.handicapped.adminActivity">
+
+    <item
+        android:id="@+id/admin"
+        android:orderInCategory="100"
+        android:title="Main Admin"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/log_out"
+        android:orderInCategory="100"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+</menu>
